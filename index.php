@@ -12,7 +12,7 @@
      * @return string $code
      */
 
-function uniqueUrlSegment(){
+function uniqueCharacterString(){
 
 	$letters =  "1234567890abcdefghijklmnopqrstuvwxyz";	
 	$microtime = microtime();
@@ -20,10 +20,6 @@ function uniqueUrlSegment(){
 	$code = '';
 	
 	$time_element = (int)($microtime_array[0]/100);
-  
-	//$digit_list_for_ones .= substr(10000000000 + $time_element * 9973,-10);
-	//$digit_list_for_tens .= strrev($microtime_array[1]);
-	//$digit_list_for_hundreds = strrev($digit_list_for_ones);
   
 	$digit_list_for_ones .= $time_element. $time_element;
 	$digit_list_for_tens = strrev($digit_list_for_ones);
@@ -37,10 +33,6 @@ function uniqueUrlSegment(){
 
 		$mult   = (int)($num / 36);
 		$mod    = $num - ($mult * 36);
-    
-		//if($mult < 9 && mt_rand(0,1)){
-			//$mult += 27;
-		//}
 	
 		$code  .= $letters[$mult].$letters[$mod];
 	}
@@ -50,7 +42,7 @@ function uniqueUrlSegment(){
 }
 
 
-echo url_code();
+echo uniqueCharacterString();
 
 ?>
 
