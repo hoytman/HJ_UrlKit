@@ -36,7 +36,7 @@
  * and manipulations
  *
  * @author		Hoyt Jolly
- * @link		https://codeigniter.com/user_guide/libraries/benchmark.html
+ * @link		https://github.com/hoytman/uniqueCharacterString
  */
 
 class UrlKit {
