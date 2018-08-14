@@ -39,7 +39,7 @@
  * @link		https://github.com/hoytman/uniqueCharacterString
  */
 
-class UrlKit {
+class HJ_UrlKit {
     
     /**
     * List of all characters used in url segment generation
@@ -160,11 +160,17 @@ class UrlKit {
 
         while($strLength > 0){
 
+            // loops through $inputString, picks a character, adds it to
+            // $newString, then removes that char from $inputString.
+            
             $seed += $factor;
 
             if($seed >= $strLength){
                 $seed = $seed % $strLength; 
             }
+            
+            //$seed in basically the index of the character that is selected
+            //this index is advanced by $factor each pass.
 
             $newString .= $inputString[$seed];
 
