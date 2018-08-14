@@ -22,7 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  *
- * @package         UrlKit
+ * @package         HJ_UrlKit
  * @author          Hoyt Jolly
  * @license         https://opensource.org/licenses/MIT	
  * @link	
@@ -30,13 +30,13 @@
  */
 
 /**
- * UrlKit Class
+ * HJ_UrlKit Class
  *
  * This class is designed to help with many URL related features 
  * and manipulations
  *
  * @author		Hoyt Jolly
- * @link		https://github.com/hoytman/uniqueCharacterString
+ * @link		https://github.com/hoytman/HJ_UrlKit
  */
 
 class HJ_UrlKit {
@@ -73,7 +73,7 @@ class HJ_UrlKit {
     }
     
     /**
-     * Get Unique String
+     * Get Unique String Segment
      * 
      * returns a unique mircotime() based string of 20 characters
      * The function was intended to return a unique string of characters which 
@@ -91,7 +91,7 @@ class HJ_UrlKit {
      * @return string 
      */
     
-    public function getUniqueString(){
+    public function getUniqueStringSegment(){
         
         
         $letters = $this->key_string;

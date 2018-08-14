@@ -1,7 +1,7 @@
 <?php 
 
-require_once('UrlKit.php');
-$MyUrlKit = new UrlKit();
+require_once('HJ_UrlKit.php');
+$MyUrlKit = new HJ_UrlKit();
 
 ?>
 
@@ -39,9 +39,9 @@ $MyUrlKit = new UrlKit();
 
 <?php
         
-    echo 'uniqueUrlSegment(); = '. $MyUrlKit->getUniqueString() .'<br />';
-    echo 'uniqueUrlSegment(); = '. $MyUrlKit->getUniqueString() .'<br />';
-    echo 'uniqueUrlSegment(); = '. $MyUrlKit->getUniqueString() .'<br />';
+    echo 'getUniqueStringSegment(); = '. $MyUrlKit->getUniqueStringSegment() .'<br />';
+    echo 'getUniqueStringSegment(); = '. $MyUrlKit->getUniqueStringSegment() .'<br />';
+    echo 'getUniqueStringSegment(); = '. $MyUrlKit->getUniqueStringSegment() .'<br />';
     
 ?>
         
@@ -83,6 +83,16 @@ $dataStr = "1234567890abcdefghijklmnopqrstuvwxyz";
     
     <h1>A good test of shuffleString()</h1>
 
+    <p>
+        For each test, 
+        shuffleString() is called 2000 times.  each time, the result is passed 
+        as the first parameter, and the seed is set to the ord value of the 
+        first character of the result.  Each test will return the same
+        value which demonstrated that if the 
+        string and the integer do not change, repeat calls to this function will 
+        always return the same string.
+    </p>
+    
     <div class="output">
 
 <?php

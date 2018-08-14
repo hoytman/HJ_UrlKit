@@ -1,4 +1,4 @@
-# uniqueCharacterString
+# HJ_UrlKit
 
 I wrote this function to create unique url's for my site. Using these urls, 
 visitors could demo site functionality without having to create a login. 
@@ -18,3 +18,5 @@ I set the following criteria for this function:
 Scalability issue found: If this function is run on more than one server, there is a 
 tiny chance that two users could send a request at exactly the same time and get a 
 duplicated code.
+
+This Class also contains a function for shuffling strings
